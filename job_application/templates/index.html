@@ -9,7 +9,8 @@
 <body>
     <div class="container">
         <h1 class="mt-4 mb-4">Job Application Form</h1>
-        <form action="/submit" method="POST">
+        <form method="POST" action="{% url 'index' %}">
+            {% csrf_token %}
             <div class="form-group">
                 <div class="mb-3">
                     <label for="first_name">First Name:</label>
