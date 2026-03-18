@@ -28,3 +28,6 @@ def index(request):
 
             messages.success(request, f"Thank you for your application, {first_name} {last_name}!")
     return render(request, 'index.html')
+
+def about(request):
+    return render(request, 'about.html')
